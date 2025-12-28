@@ -33,80 +33,25 @@ Built with **React**, **Vite**, **React Router**, and **styled-components**, it 
 
 ---
 
-## ⚙️ Installation & Setup
+## Running the Project
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/UlrikaRakkaBrant/js-project-movies.git
-cd js-project-movies
-```
+The project can be run locally or viewed via the live demo.
 
-### 2️⃣ Install dependencies
-```bash
-npm install
-```
-
-### 3️⃣ Add your TMDB API key
-Create a `.env` file in the project root and add your API key:
-```
-VITE_TMDB_API_KEY=YOUR_API_KEY_HERE
-```
-
-> 🔑 Your key must start with `VITE_` for Vite to expose it to the app.  
-> 🛡️ Make sure `.env` is listed in `.gitignore` so your key isn’t pushed to GitHub.
-
-### 4️⃣ Start the development server
-```bash
-npm run dev
-```
-Then open [http://localhost:5173](http://localhost:5173) in your browser.
+To run locally:
+- Install dependencies
+- Add a TMDB API key as an environment variable
+- Start the development server with `npm run dev`
 
 ---
 
-## 🌐 Deploying to Netlify
+## Deployment
 
-### 1️⃣ Connect your GitHub repo in [Netlify](https://app.netlify.com/)
+The application is deployed on Netlify using a Vite production build.
 
-### 2️⃣ Build settings
-- **Build command:** `npm run build`  
-- **Publish directory:** `dist`
-
-### 3️⃣ Add environment variables
-In **Site Settings → Environment Variables**, add:
-```
-VITE_TMDB_API_KEY=YOUR_API_KEY_HERE
-NODE_VERSION=20
-```
-
-### 4️⃣ Add a SPA redirect rule for React Router
-In your project’s **public** folder, create a file named `_redirects` with this line:
-```
-/* /index.html 200
-```
-
-### 5️⃣ Deploy 🚀  
-After deployment, visit your site and test:
-```
-https://flixscope.netlify.app/movies/123
-```
-✅ It should load directly (no 404 errors).
-
----
-
-## 🧩 Folder Structure
-
-```
-src/
-  api/          # TMDB endpoints + image helpers
-  components/   # UI components (Loader, NotFound, MovieCard, etc.)
-  hooks/        # useFetch hook
-  routes/       # Page components (PopularList, MovieDetail)
-  styles/       # GlobalStyles with theme variables
-  App.jsx
-  main.jsx
-public/
-  _redirects    # SPA redirect for Netlify
-```
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Environment variables configured in Netlify
+- SPA routing handled via redirect rules
 
 ---
 
@@ -130,18 +75,6 @@ public/
 
 ---
 
-## 💻 Useful Commands
-
-| Command | Description |
-|----------|-------------|
-| `npm install` | Install project dependencies |
-| `npm run dev` | Start the local dev server |
-| `npm run build` | Build the production version |
-| `npm run preview` | Preview the production build locally |
-| `git add . && git commit -m "message" && git push` | Commit and push changes |
-
----
-
 ## 👩‍💻 Author
 
 **Ulrika Einebrant**  
@@ -156,7 +89,6 @@ Frontend Developer
 
 ## 🏁 License
 
-This project was created as part of the **Technigo Bootcamp**.  
-You are welcome to use or reference the code for learning purposes.
+MIT License
 
 ---
