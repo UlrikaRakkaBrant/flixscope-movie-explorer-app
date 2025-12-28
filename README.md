@@ -33,6 +33,16 @@ Built with **React**, **Vite**, **React Router**, and **styled-components**, it 
 
 ---
 
+## ♿ Accessibility
+
+Accessibility was considered throughout the project, including:
+- Semantic HTML for better screen reader support
+- Keyboard-accessible navigation and interactive elements
+- Visible focus states
+- Sufficient color contrast
+
+---
+
 ## Running the Project
 
 The project can be run locally or viewed via the live demo.
